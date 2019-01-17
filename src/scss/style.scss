@@ -672,3 +672,63 @@ hr{
     }
   }
 }
+
+.buttons-adc{
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 100;
+
+  .button{
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin-right: 16px;
+    display: block;
+    text-align: center;
+    padding-top: 18px;
+  }
+  .button-carrinho{
+    background: $colorPrinc02;
+    position: relative;
+
+    .quantidade-carrinho{
+      color: #fff;
+      background: #dc6ebe;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 7px;
+      
+    }
+  }
+  .button-whats{
+    background: #00ff00;
+  }
+
+  .icon-carrinho{
+    width: 43px;
+    height: 39px;
+    background-position: -15px -16px;
+  }
+  .icon-whats2{
+    width: 36px;
+    height: 36px;
+    background-position: -92px -16px;
+  }
+
+  @media(max-width: 992px){
+    position: fixed;
+    right: 8px;
+    bottom: 16px;
+    
+    .button{
+      margin-right: 8px;
+    }
+  }
+}

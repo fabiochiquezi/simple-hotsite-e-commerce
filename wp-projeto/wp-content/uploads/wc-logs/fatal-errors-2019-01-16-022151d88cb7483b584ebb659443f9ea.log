@@ -1,0 +1,12 @@
+2019-01-16T17:22:16+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product.php on line 130
+
+2019-01-16T18:09:11+00:00 CRITICAL Call to a member function is_sold_individually() on null in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product.php on line 223
+
+2019-01-16T21:26:07+00:00 CRITICAL Call to a member function get_permalink() on string, em C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product.php, na linha 37
+
+2019-01-16T21:27:58+00:00 CRITICAL Call to a member function get_permalink() on string, em C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product.php, na linha 46
+
+2019-01-16T21:28:12+00:00 CRITICAL Call to a member function is_purchasable() on string, em C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product.php, na linha 67
+
+2019-01-16T21:28:37+00:00 CRITICAL Call to a member function get_availability() on string, em C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\includes\wc-template-functions.php, na linha 3136
+

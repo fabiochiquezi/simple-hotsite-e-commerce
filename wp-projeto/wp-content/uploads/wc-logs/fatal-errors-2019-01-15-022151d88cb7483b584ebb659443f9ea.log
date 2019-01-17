@@ -1,0 +1,12 @@
+2019-01-15T19:59:45+00:00 CRITICAL Call to a member function get_price_html() on string in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product.php on line 36
+
+2019-01-15T20:00:46+00:00 CRITICAL Call to a member function get_price_html() on string in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product.php on line 45
+
+2019-01-15T20:02:33+00:00 CRITICAL Call to a member function get_rating_count() on string in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product\rating.php on line 29
+
+2019-01-15T20:10:30+00:00 CRITICAL Call to a member function get_price() on null in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\includes\wc-product-functions.php on line 1017
+
+2019-01-15T20:11:02+00:00 CRITICAL Call to a member function get_price() on null in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\includes\wc-product-functions.php on line 1017
+
+2019-01-15T20:11:59+00:00 CRITICAL Call to a member function get_rating_count() on string in C:\wamp64\www\divi-yoga-tema-design\wp-projeto\wp-content\plugins\woocommerce\templates\single-product\rating.php on line 29
+
