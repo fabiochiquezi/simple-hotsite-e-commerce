@@ -1,4 +1,80 @@
 
+
+
+
+
+/* Efeito Carregar */
+document.addEventListener("DOMContentLoaded", function(event){
+  class onloadFunc{
+    constructor(el, option){
+      this.el = el;
+      this.main = this.el.querySelector('.main-site');
+      this.onloadItem = this.el.querySelector('.onload');
+      this.itensShow = this.el.querySelectorAll('.js-show-func');
+      this._init();
+    }
+    _init(){
+      this.onloadItem.style.opacity = '0';
+      setTimeout(() => {
+        this.onloadItem.classList.add('force-none');
+        this.main.classList.remove('off');
+        this._startShowItems();
+      }, 100);
+    }
+    _startShowItems(){
+      this.itensShow.forEach(function(el, i){
+        el.classList.add('eff-load-compl');
+      });
+
+      new funcScroll( window )
+      new colapseFunc( document.querySelector(' .detalhes-produto ') );
+    }
+  }
+  new onloadFunc( document.querySelector('body') );
+
+
+  class funcScroll{
+    constructor(el){
+      let self = this;
+      this.el = el;
+      this.main = document.querySelector('.main-site');
+      this.section = this.main.querySelectorAll('.sec-js');
+      this.sectionAlturas = [];
+      this.section.forEach(function(el, i){
+        self.sectionAlturas.push([el.clientHeight, el.offsetTop, el])
+      });
+      this._init();
+    }
+    _init(){
+      var self = this;
+
+      // if (window.matchMedia("(min-width: 768px)").matches) {
+
+        this.el.addEventListener('scroll', ()=>{
+          let scrollNumber = window.pageYOffset + window.innerHeight || document.documentElement.scrollTop + window.innerHeight;
+  
+          this.sectionAlturas.forEach(function(el, i){
+            if(scrollNumber > (el[1] + (el[0] / 3)) && scrollNumber < (el[1]+el[0]) ){
+              self._startFunc(el[2]);
+            }
+          });
+        })
+
+      // }
+
+    }
+    _startFunc(item){
+      if( !(item.classList.contains('active-sec')) ){
+        item.classList.add('active-sec');
+
+        item.querySelectorAll('.js-show-func2').forEach(function(el, i){
+          let classAdd = el.getAttribute('data-classShow');
+          el.classList.add(classAdd);
+        });
+      }
+    }
+  }
+  
   class colapseFunc{
     constructor( el, option ){
       this.el = el;
@@ -36,7 +112,7 @@
     }
     _debug(){
       if (window.matchMedia("(max-width: 420px)").matches) {
-        const heightItemInicio = this.itemActive.offsetHeight;
+        const heightItemInicio = this.itemActive.offsetHeight+100;
         this.contentColapse.style.height = `${heightItemInicio}px`; 
       }     
       window.onresize = () => {
@@ -80,7 +156,10 @@
       }
     }
   }
+  
+});
 
-  new colapseFunc( document.querySelector(' .detalhes-produto ') );
 
-
+// window.onscroll = function(){
+//   console.log('x');
+// }

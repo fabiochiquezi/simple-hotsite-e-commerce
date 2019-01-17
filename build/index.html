@@ -8,18 +8,24 @@
   <title>Document</title>
 </head>
 <body>
-  <section class="banner-produto">
+
+<div class="onload d-flex align-items-center align-content-center justify-content-center">
+  <img src="img/loader.gif" alt="">
+</div>
+
+<main class="main-site off">
+  <section class="banner-produto sec-js">
     <div class="container">
       <div class="row d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
         <div class="content order-2 order-lg-1">
-          <h1>Hezbbollah <span>Uma breve
+          <h1 class="js-show-func">Hezbbollah <span>Uma breve
               História</span></h1>
-          <p class="desc">Nunc consequat justo eget enim finibus porta. 
+          <p class="desc js-show-func">Nunc consequat justo eget enim finibus porta. 
               Suspendisse orci nunc, rutrum quis nunc sed.</p>
-          <p class="preco">R$ 29,90</p>
-          <a href="" class="button1">COMPRAR</a>
+          <p class="preco js-show-func">R$ 29,90</p>
+          <a href="" class="button1 js-show-func">COMPRAR</a>
         </div>
-        <div class="image order-1">
+        <div class="image order-1 js-show-func">
           <img src="./img/banner-01.png" class="d-none d-lg-block" alt="">
           <img src="./img/banner-01-mob.png" class="d-lg-none" alt="">
         </div>
@@ -27,10 +33,10 @@
     </div>
   </section>
 
-  <section class="detalhes-produto">
+  <section class="detalhes-produto sec-js">
     <div class="container">
       <div class="row d-lg-flex flex-lg-nowrap justify-content-lg-between">
-        <div class="content d-flex flex-column align-items-center align-items-lg-start align-content-center">
+        <div class="content d-flex flex-column align-items-center align-items-lg-start align-content-center js-show-func2" data-classShow="show-left">
           <div class="menu-colapse">
               <ul class="d-none d-lg-flex">
                   <li><a href="item-1" class="active">Nota do Autor</a></li>
@@ -95,7 +101,7 @@
                 </div>
           </div>
         </div>
-        <div class="image">
+        <div class="image js-show-func2" data-classShow="show-right">
           <img src="./img/foto-ilustrativa-01.jpg" alt="">
         </div>
       </div>
@@ -104,12 +110,12 @@
 
   <hr class="hr-1">
 
-  <section class="resumo-produto d-none d-lg-block">
+  <section class="resumo-produto d-none d-lg-block sec-js">
     <div class="container">
       <div class="row">
-          <h3>RESUMO DO LIVRO</h3>
-          <h2>Donec A Tristique Risus!</h2>
-          <div class="content">
+          <h3 class="js-show-func2" data-classShow="show-top">RESUMO DO LIVRO</h3>
+          <h2 class="js-show-func2" data-classShow="show-top">Donec A Tristique Risus!</h2>
+          <div class="content js-show-func2" data-classShow="show-top">
             <p>Donec tristique nec risus at tempor. Praesent vel blandit lacus, id viverra nunc. Pellentesque tristique nibh ac erat lacinia maximus. Quisque quis pellentesque metus. Nam vestibulum libero at nulla sollicitudin sodales. Vivamus auctor pellentesque varius. Fusce in egestas ante. Etiam mattis dui et purus finibus dignissim quis et erat. Aliquam quis rhoncus lacus. Proin at massa in quam viverra egestas. Nulla facilisi. Integer at libero quis ipsum mollis aliquam suscipit eu nibh. Vivamus id augue justo. Maecenas aliquet pulvinar nisl venenatis faucibus. Vivamus consectetur sapien lectus, a gravida magna euismod sit amet.</p>
             <p>Fusce sed leo ac enim eleifend tempus. Vestibulum condimentum, nulla nec efficitur suscipit, mi arcu bibendum diam, eget posuere nisl massa ut neque. Nulla facilisi. Etiam sed fermentum libero. Vestibulum eget volutpat massa. Sed eu ipsum bibendum, finibus elit at, semper urna. Aliquam dapibus, velit facilisis venenatis interdum, augue sapien consectetur metus, in accumsan dolor nisl sed felis. Duis ultricies risus nec pulvinar dignissim.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec mauris nec nulla congue consectetur nec et odio. Phasellus lobortis commodo mi, in pharetra eros. Nunc eu dictum tellus, vitae finibus dui. Nam aliquet scelerisque quam ac molestie. Suspendisse pellentesque finibus tellus, a malesuada dolor mollis et. Donec eu lectus ac libero iaculis tempus eu vitae magna. </p>
@@ -118,7 +124,7 @@
     </div>
   </section>
 
-  <section class="outros-produtos">
+  <section class="outros-produtos sec-js">
     <div class="container">
       <div class="row d-flex flex-column align-items-center flex-lg-row justify-content-around">
         <div class="content order-2 order-lg-1">
@@ -138,7 +144,7 @@
     </div>
   </section>
 
-  <section class="testimonials-section">
+  <section class="testimonials-section sec-js">
     <div class="container">
       <div class="row">
           <h3>RESUMO DO LIVRO</h3>
@@ -146,7 +152,7 @@
 
           <div class="content-testimonials d-md-flex flex-wrap justify-content-lg-between">
 
-            <div class="item">
+            <div class="item js-show-func2" data-classShow="show-scale">
               <p>“Nunc consequat justo eget enim 
                   finibus porta. Suspendisse orci nunc, 
                   rutrum quis nunc sed, feugiat hendrerit 
@@ -154,7 +160,7 @@
               <span class="autor">Fábio Chiquezi</span>
               <span class="where">Editora Lorem Ipsun</span>
             </div>
-            <div class="item">
+            <div class="item js-show-func2" data-classShow="show-scale">
 
               <p>“Nunc consequat justo eget enim 
                   finibus porta. Suspendisse orci nunc, 
@@ -164,7 +170,7 @@
               <span class="where">Editora Lorem Ipsun</span>
             </div>
 
-            <div class="item">
+            <div class="item js-show-func2" data-classShow="show-scale">
               <p>“Nunc consequat justo eget enim 
                   finibus porta. Suspendisse orci nunc, 
                   rutrum quis nunc sed, feugiat hendrerit 
@@ -173,7 +179,7 @@
               <span class="where">Editora Lorem Ipsun</span>
             </div>
               
-            <div class="item">
+            <div class="item js-show-func2" data-classShow="show-scale">
               <p>“Nunc consequat justo eget enim 
                   finibus porta. Suspendisse orci nunc, 
                   rutrum quis nunc sed, feugiat hendrerit 
@@ -182,7 +188,7 @@
               <span class="where">Editora Lorem Ipsun</span>
             </div>
 
-              <div class="item">
+              <div class="item js-show-func2" data-classShow="show-scale">
                 <p>“Nunc consequat justo eget enim 
                     finibus porta. Suspendisse orci nunc, 
                     rutrum quis nunc sed, feugiat hendrerit 
@@ -191,7 +197,7 @@
                 <span class="where">Editora Lorem Ipsun</span>
               </div>
 
-                <div class="item">
+                <div class="item js-show-func2" data-classShow="show-scale">
                   <p>“Nunc consequat justo eget enim 
                       finibus porta. Suspendisse orci nunc, 
                       rutrum quis nunc sed, feugiat hendrerit 
@@ -245,13 +251,15 @@
     </footer>
   </section>
 
-<div class="buttons-adc d-flex">
-  <a href="" class="button button-carrinho">
-    <i class="icon icon-carrinho"></i>
-    <span class="quantidade-carrinho">0</span>
-  </a>
-  <a href="" class="button button-whats"><i class="icon icon-whats2"></i></a>
-</div>
+  <div class="buttons-adc d-flex">
+    <a href="" class="button button-carrinho">
+      <i class="icon icon-carrinho"></i>
+      <span class="quantidade-carrinho">0</span>
+    </a>
+    <a href="" class="button button-whats"><i class="icon icon-whats2"></i></a>
+  </div>
+    
+</main>
 
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
