@@ -9,4 +9,7 @@
 
   <?php wp_head(); ?>
 </head>
-<body>
+<body class="<?php echo the_title(); ?>">
+<div class="onload d-flex align-items-center align-content-center justify-content-center">
+  <img src="<?php echo get_template_directory_uri(); ?>/img/loader.gif" alt="">
+</div>

@@ -30,39 +30,54 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 ?>
 <div class="container">
 	<div class="row">
-	<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
-<?php if ( $checkout->get_checkout_fields() ) : ?>
+	<header class="header-woo d-flex justify-content-between flex-wrap align-items-center">
+			<h1><a href="http://localhost/divi-yoga-tema-design/wp-projeto/product/hezbbollah-uma-breve-historia/">ivanlivros.com.br</a></h1>
 
-	<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
+			<div class="contact-1 d-lg-flex">
+					<div class="tel d-flex flex-column align-items-center flex-md-row">
+						<p>(19) 3227-9718</p>
+						<p class="d-none d-lg-block">|</p>
+						<p>(19) 9 9283-7035</p>
+					</div>
+				</div>
+		</header>
 
-	<div class="col2-set" id="customer_details">
-		<div class="col-12">
-			<?php do_action( 'woocommerce_checkout_billing' ); ?>
+		<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+
+			<?php if ( $checkout->get_checkout_fields() ) : ?>
+
+				<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
+
+				<div class="col2-set" id="customer_details">
+					<div class="col-12">
+						<?php do_action( 'woocommerce_checkout_billing' ); ?>
+					</div>
+
+					<div class="col-12">
+						<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+					</div>
+				</div>
+
+				<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+
+			<?php endif; ?>
+
+			<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+
+			<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
+
+			<div id="order_review" class="woocommerce-checkout-review-order">
+				<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+			</div>
+
+			<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
+
+		</form>
+
+		<div class="direitos-autorais-woo">
+			<p>©2019 Todos os direitos autorais reservados.</p>
 		</div>
-
-		<div class="col-12">
-			<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-		</div>
-	</div>
-
-	<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
-
-<?php endif; ?>
-
-<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-
-<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
-
-<div id="order_review" class="woocommerce-checkout-review-order">
-	<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-</div>
-
-<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
-
-</form>
-
-
 	</div>
 </div>
 

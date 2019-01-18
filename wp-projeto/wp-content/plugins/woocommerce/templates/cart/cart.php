@@ -21,8 +21,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 <div class="container">
 	<div class="row">
-		<header class="header-car d-flex justify-content-between flex-wrap align-items-center">
-			<h1><a href="">ivanlivros.com.br</a></h1>
+		<header class="header-woo d-flex justify-content-between flex-wrap align-items-center">
+			<h1><a href="http://localhost/divi-yoga-tema-design/wp-projeto/product/hezbbollah-uma-breve-historia/">ivanlivros.com.br</a></h1>
 
 			<div class="contact-1 d-lg-flex">
 					<div class="tel d-flex flex-column align-items-center flex-md-row">
@@ -180,7 +180,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 		<?php do_action( 'woocommerce_after_cart' ); ?>
 
-		<div class="direitos-autorais">
+		<div class="direitos-autorais-woo">
 			<p>©2019 Todos os direitos autorais reservados.</p>
 		</div>
 	</div>

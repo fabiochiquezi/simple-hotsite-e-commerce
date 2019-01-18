@@ -14,7 +14,7 @@ function compilaSass() {
     browsers: ['last 5 versions'],
     cascade: false
   }))
-  .pipe(gulp.dest('build/css/'))
+  .pipe(gulp.dest('wp-projeto/wp-content/themes/storefront/'))
   .pipe(browserSync.stream());
 }
 
@@ -65,7 +65,7 @@ function watch() {
   gulp.watch('build/js/*.js', gulpBabel);
   // gulp.watch('src/js/*.js', gulpJs);
   gulp.watch('build/js/*.js').on('change', browserSync.reload);
-  gulp.watch(['build/*.html', 'build/*.php']).on('change', browserSync.reload);
+  gulp.watch(['wp-projeto/wp-content/themes/storefront/*.html', 'wp-projeto/wp-content/themes/storefront/*.php']).on('change', browserSync.reload);
 }
 
 gulp.task('watch', watch)
